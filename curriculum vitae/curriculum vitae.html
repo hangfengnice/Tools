@@ -218,24 +218,35 @@
               <legend align="center">登录</legend>
               <p>
                 <input
+                  class="input-required"
                   placeholder="账号/手机"
                   required
                   name="account"
+                  id="username"
                   autofocus
                   tabindex="2"
                 />
               </p>
               <p>
                 <input
+                  class="input-required"
+                  id="password"
                   type="password"
                   placeholder="密码"
                   required
+                  id="password"
                   name="password"
                   tabindex="3"
                 /><a href="">忘记密码</a>
               </p>
               <p>
-                <input type="" placeholder="验证码" required tabindex="4" /><img
+                <input
+                  type=""
+                  class="input-required"
+                  placeholder="验证码"
+                  required
+                  tabindex="4"
+                /><img
                   src=""
                   alt="验证码"
                   class="captcha-img"
@@ -253,6 +264,7 @@
         <a href="https://github.com/hangfengnice" target="_blank">使劲戳我</a>
       </footer>
     </div>
+
     <script>
       var vm = new Vue({
         el: "#app",
@@ -279,4 +291,5 @@
     </script>
   </body>
 </html>
+
 
