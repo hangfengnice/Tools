@@ -36,10 +36,51 @@ a {
 }
 .vue,
 .vue1 {
+  margin-right: 2em;
   text-align: right;
   font-size: 0.8em;
   color: rgb(118, 215, 240);
+  position:relative;
 }
+[data-title]::before {
+  content: attr(data-title);
+  
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: .5em;
+  right:2.8%;
+  visibility: hidden;
+  display: inline-block;
+  pointer-events: none;
+  /* transition: visibility .01s .2s; */
+
+
+}
+.vue[data-title]::before{
+  right: 1.7%;
+}
+[data-title]::after {
+  content: "";
+  border: 0.5em solid;
+  border-color: #000 transparent  transparent;
+  position: absolute;
+  right: 3.8%;
+  bottom:100%;
+  margin-bottom: -.5em;
+  pointer-events: none;
+  /* transition: visibility .01s .2s; */
+  visibility: hidden;
+}
+[data-title]:hover::before,
+[data-title]:hover::after,
+[data-title]:focus::before,
+[data-title]:focus::after {
+  visibility: visible;
+}
+
 h1 {
   width: 40%;
   margin: 0.3em auto;
