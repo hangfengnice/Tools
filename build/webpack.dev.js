@@ -7,7 +7,7 @@ module.exports = smart(base, {
   devtool: "cheap-module-eval-source-map",
   devServer: {
     hot: true,
-    progress: true,
+    // progress: true,
     contentBase: "../dist",
     proxy: {
       "/api": {
