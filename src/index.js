@@ -1,9 +1,10 @@
-// import Vue from 'vue'
-// import App from './App'
+// 数据结构
 
-// new Vue({
-//   render: h => h(App)
-// }).$mount('#app')
-
+// 双向链表
 // import DoublyLinkedList from './data-structure/DoublyLinkedList'
-import Set from './data-structure/Set'
+
+// 集合
+// import Set from './data-structure/Set'
+
+// 哈希表
+import HashTable from "./data-structure/HashTable";
