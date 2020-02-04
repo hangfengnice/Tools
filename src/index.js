@@ -7,4 +7,7 @@
 // import Set from './data-structure/Set'
 
 // 哈希表
-import HashTable from "./data-structure/HashTable";
+// import HashTable from "./data-structure/HashTable";
+
+// 数结构
+import BinarySearchTree from './data-structure/BinarySearchTree'
